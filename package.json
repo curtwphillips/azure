@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/curtwphillips/azure/issues"
   },
-  "homepage": "https://github.com/curtwphillips/azure#readme"
+  "homepage": "https://github.com/curtwphillips/azure#readme",
+  "dependencies": {
+    "azure-kusto-data": "^1.0.1"
+  }
 }
