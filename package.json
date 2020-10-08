@@ -1,0 +1,19 @@
+{
+  "name": "azure",
+  "version": "1.0.0",
+  "description": "azure library functions I wrote to interact with azure",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curtwphillips/azure.git"
+  },
+  "author": "curtwphillips",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curtwphillips/azure/issues"
+  },
+  "homepage": "https://github.com/curtwphillips/azure#readme"
+}
