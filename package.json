@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/curtwphillips/azure#readme",
   "dependencies": {
-    "azure-kusto-data": "^1.0.1"
+    "azure-kusto-data": "^1.0.1",
+    "lodash": "^4.17.20"
   }
 }
