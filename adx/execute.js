@@ -12,6 +12,10 @@ function execute(message, raw, dbName = defaultDB, doNotLog, retries = 0) {
     // setting dbName here allows callee to pass null for dbName and true or false for doNotLog
     dbName = dbName || defaultDB;
 
+    if (typeof message !== 'string') {
+      throw new Error(`message ${JSON.stringify(message)} must be a string`);
+    }
+
     // get an error stack in advance or else there will be no stack available showing
     // the caller of execute
     const errWithStack = new Error();
