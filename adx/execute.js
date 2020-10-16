@@ -16,6 +16,10 @@ function execute(message, raw, dbName = defaultDB, doNotLog, retries = 0) {
       throw new Error(`message ${JSON.stringify(message)} must be a string`);
     }
 
+    if (logADXMessages.on && !doNotLog) {
+      console.log(`\nexecuting: ${message}`); // tests use this for debugging
+    }
+
     // get an error stack in advance or else there will be no stack available showing
     // the caller of execute
     const errWithStack = new Error();
