@@ -13,3 +13,9 @@ exports.getFunctionBody = async (functionName) => {
   const rows = standardizeTableResponse(response);
   return rows && rows[0] && rows[0].Body;
 };
+
+// removes whitespace, periods, and dashes
+exports.stringToVariableName = (str) => {
+  if (!str) throw new Error('Failed to determine variable name. Input not provided.');
+  return str.replace(/[\s\.-]/gi, '');
+};
